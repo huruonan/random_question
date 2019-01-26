@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>题目录入页</title>
+  <link rel="stylesheet" href="./static/submit.scss">
+  <script src="//s1.hdslb.com/bfs/static/jinkela/long/js/jquery/jquery3.3.1.min.js"></script>
+  <script src="./static/submit.js"></script>
+  <script>
+    window.handleChoose = function(self,value) {
+      var result = value.replace(/([A-G])(\s)?([\u4e00-\u9fa5]+)(\s+)?/g, '$1$3\n');
+      self.value = result;
+    }
+  </script>
+</head>
+<body>
+  <label for="lastname">考试类型：</label>
+  <input type="text" id="examType" placeholder="zZZ" value="2"></input>
+  <br />
+  <select name="question" id="question-type" size="1">
+    <option value="select">选择题</option>
+    <option value="text" selected>简答题</option>
+  </select>
+  <br />
+  <label for="lastname">题目：</label>
+  <textarea type="text" id="title" rows="8" cols="70" placeholder="zZZ"></textarea>
+  <br />
+  <label for="lastname">选项：</label>
+  <textarea type="tip" id="tip" rows="8" cols="70" placeholder="zZZ" onchange="handleChoose(this, this.value)"></textarea>
+  <br />
+  <label for="lastname">答案：</label>
+  <textarea type="text" id="answer" rows="8" cols="70" placeholder="zZZ"></textarea>
+  <div id="submit-btn">提交</div>
+</body>
+</html>

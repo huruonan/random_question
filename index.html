@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Random!</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="//s1.hdslb.com/bfs/static/jinkela/long/js/jquery/jquery3.3.1.min.js"></script>
+  <link rel="stylesheet" type="text/css" media="screen" href="./static/main.scss" />
+  <script src="./static/main.js"></script>
+</head>
+<body>
+  <div id="start-btn" class="start-btn">
+    <div data-examid="1">《2019绩效》</div>
+    <div data-examid="2">《2019年员工培训》</div>
+  </div>
+  
+  <!-- choose type -->
+  <div id="type-btn">
+    <ul>
+      <li id="type-btn-select">单选/多选</li>
+      <li id="type-btn-text">填空/论述</li>
+    </ul>
+  </div>
+  <!-- select/text mode -->
+  <div id="select-question-content">
+    <div id="content-detail">
+      <div id="detail-title"></div>
+      <div id="detail-tip"></div>
+    </div>
+    <div id="next-btn">下一题</div>
+  </div>
+  <div id="text-question-content">
+    <div id="content-detail"></div>
+    <div id="next-btn">下一题</div>
+  </div>
+  <script src="//cdn.jsdelivr.net/npm/jquery-toast-plugin@1.3.2/dist/jquery.toast.min.js"></script>
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/jquery-toast-plugin@1.3.2/dist/jquery.toast.min.css">
+</body>
+</html>
